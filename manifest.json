@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Custom Shortcuts Extension",
+    "version": "1.0",
+    "description": "An extension to manage and execute custom keyboard shortcuts for various actions.",
+    "permissions": [
+      "activeTab"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["main.js"]
+      }
+    ]
+  }
+  
