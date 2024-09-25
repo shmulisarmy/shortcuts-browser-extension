@@ -1,0 +1,1 @@
+# shortcuts-browser-extension
